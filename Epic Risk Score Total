@@ -1,0 +1,11 @@
+import com.atlassian.jira.component.ComponentAccessor
+import com.atlassian.jira.issue.CustomFieldManager
+
+CustomFieldManager customFieldManager = ComponentAccessor.getCustomFieldManager()
+List<String> fieldNames = ["Business Risks Score","Technical Risks Score","Validation Risks Score","Organizational Risks Score","Dependency Risks Score"]
+List<Integer> scores = []
+for (String field : fieldNames){
+    def cf = customFieldManager.getCustomFieldObjectByName(field)
+    scores.add((Integer) issue.getCustomFieldValue(cf)?: 0)
+}
+return scores.sum {it}
