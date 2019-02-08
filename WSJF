@@ -1,0 +1,19 @@
+import com.atlassian.jira.component.ComponentAccessor
+import com.atlassian.jira.issue.CustomFieldManager
+
+CustomFieldManager customFieldManager = ComponentAccessor.getCustomFieldManager()
+List<String> fieldNames = ["Time Criticality","Risk Reduction","Business Value"]
+def swagCf = customFieldManager.getCustomFieldObjectByName("SWAG")
+def swag = (Integer) issue.getCustomFieldValue(swagCf)?: 0
+
+if(swag == 0){
+    return swag; //return zero
+}
+
+List<Integer> scores = []
+for (String field : fieldNames){
+    def cf = customFieldManager.getCustomFieldObjectByName(field)
+    scores.add((Integer) issue.getCustomFieldValue(cf)?: 0)
+}
+
+return scores.sum {it} / swag
