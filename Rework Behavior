@@ -1,0 +1,15 @@
+import com.atlassian.jira.component.ComponentAccessor
+import com.atlassian.jira.user.util.UserUtil
+
+def rework = getFieldByName("Rework?")
+def reworkJust = getFieldByName("Rework Justification")
+
+def reworkVal = rework.getValue().toString()
+
+reworkJust.setHidden(true)
+reworkJust.setRequired(false)
+
+if(reworkVal == "Yes"){
+    reworkJust.setHidden(false)
+    reworkJust.setRequired(true)
+}
