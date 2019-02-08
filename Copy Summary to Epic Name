@@ -1,0 +1,4 @@
+def feature = getFieldById("customfield_10006")//Feature Name
+def summary = getFieldById("summary")
+def data = summary.getValue().toString()
+feature.setFormValue(data)
