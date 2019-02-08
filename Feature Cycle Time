@@ -1,0 +1,18 @@
+import com.atlassian.jira.component.ComponentAccessor
+import com.atlassian.jira.issue.CustomFieldManager
+import com.atlassian.jira.ComponentManager
+
+def CustomFieldManager customFieldManager = ComponentAccessor.getCustomFieldManager()
+def resolvedNames = ("Done")
+
+if(issue?.resolutionObject?.name == resolvedNames) {
+	List<String> fieldNames = ["Time in Solution Design","Time in Solution Design WAIT","Time in Planning","Time IN PROGRESS","Time in Progress WAIT","Time in Ready","Time in Feature Validation","Time in Feature Validation WAIT","Time in Measure Progress","Time in Measure Progress WAIT"]
+	Integer totalCycleSeconds = 0;
+	for (String field : fieldNames){
+    	def cf = customFieldManager.getCustomFieldObjectByName(field)
+        totalCycleSeconds = totalCycleSeconds + ((Integer) issue.getCustomFieldValue(cf)?: 0)
+    }
+    def dayConversion = (24*60*60)
+
+    return totalCycleSeconds / dayConversion
+}
