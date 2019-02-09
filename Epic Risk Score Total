@@ -1,3 +1,7 @@
+//Adaptavist ScriptRunner Scripted Field, custom Scripted
+//Searcher:  Free Text Searcher
+//Template:  Number Field
+
 import com.atlassian.jira.component.ComponentAccessor
 import com.atlassian.jira.issue.CustomFieldManager
 
