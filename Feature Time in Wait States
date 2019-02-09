@@ -1,0 +1,11 @@
+import com.atlassian.jira.component.ComponentAccessor
+import com.atlassian.jira.issue.CustomFieldManager
+
+CustomFieldManager customFieldManager = ComponentAccessor.getCustomFieldManager()
+List<String> fieldNames = ["Time in Ideation","Time in Intake","Time in Solution Design WAIT","Time in Progress WAIT","Time in Ready","Time in Feature Validation WAIT","Time in Measure Progress WAIT"]
+List<Integer> wait = []
+for (String field : fieldNames){
+    def cf = customFieldManager.getCustomFieldObjectByName(field)
+    wait.add((Integer) issue.getCustomFieldValue(cf)?: 0)
+}
+return wait.sum {it}
