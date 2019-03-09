@@ -1,3 +1,9 @@
+//Adaptavist ScriptRunner Behavior
+//Mappings with Epic and projects that should use Behavior
+//Guide workflow for Epic.  Might need to have a seperate behavior for each workflow and apply to projects using that workflow
+//Set script on Fields and target Epic Name
+//Add condition for workflow action create
+
 def feature = getFieldById("customfield_10006")//Feature Name
 def summary = getFieldById("summary")
 def data = summary.getValue().toString()
