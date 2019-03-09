@@ -1,0 +1,28 @@
+// Required Imports
+import com.atlassian.jira.component.ComponentAccessor
+import com.atlassian.jira.issue.Issue
+import java.text.SimpleDateFormat;
+import java.util.Date.*;
+
+// Get the current issue key
+Issue issue = issue
+
+// Get a pointer to the CustomFieldManager
+def customFieldManager = ComponentAccessor.getCustomFieldManager()
+
+// Get a pointer to the sprint CF
+def sprintCf = customFieldManager.getCustomFieldObject("customfield_10004")
+
+// Stop the values on screen showing old cached values
+enableCache = {-> false}
+
+// Define a new Java Simple Date Format
+SimpleDateFormat sdfDate = new SimpleDateFormat("MM/dd/YYYY");
+
+// Get the Start for the sprint
+Date startDate = issue.getCustomFieldValue(sprintCf)?.startDate?.first()?.toDate()
+
+// Format the dates with the Java Simple Date format defined
+def formattedstartDate = sdfDate.format(startDate)
+
+return formattedstartDate
