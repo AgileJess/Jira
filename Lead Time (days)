@@ -1,0 +1,16 @@
+import com.atlassian.jira.component.ComponentAccessor;
+import com.atlassian.jira.issue.CustomFieldManager;
+import com.atlassian.jira.issue.Issue;
+import com.atlassian.core.util.DateUtils
+import com.atlassian.jira.config.ResolutionManager
+    
+def customFieldManager = ComponentAccessor.customFieldManager
+
+def leadtimeCF = customFieldManager.getCustomFieldObjectByName("Lead Time")
+def LeadTimeDays = (Integer) issue.getCustomFieldValue(leadtimeCF)?: 0
+def resolution = issue.resolution.getName()
+def dayConversion = (24*60*60)
+
+if (resolution == "Done") {
+    return LeadTimeDays / dayConversion
+}
