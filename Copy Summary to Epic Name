@@ -4,7 +4,19 @@
 //Set script on Fields and target Epic Name
 //Add condition for workflow action create
 
-def feature = getFieldById("customfield_10006")//Feature Name
-def summary = getFieldById("summary")
+import com.atlassian.jira.issue.Issue
+import com.atlassian.jira.issue.MutableIssue
+import com.atlassian.jira.issue.fields.CustomField
+import com.atlassian.jira.issue.CustomFieldManager
+import com.atlassian.jira.component.ComponentAccessor
+import org.apache.log4j.Category
+import com.atlassian.jira.issue.util.DefaultIssueChangeHolder
+import com.atlassian.jira.ComponentManager
+import com.atlassian.jira.issue.ModifiedValue
+
+def currentSummary = underlyingIssue?.summary
+def summary = getFieldById(getFieldChanged())
+def feature = getFieldById("customfield_10002")//Feature Name
+feature.setRequired(false)
 def data = summary.getValue().toString()
 feature.setFormValue(data)
