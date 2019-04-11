@@ -1,0 +1,23 @@
+//Create Message Custom Filed (for edit)
+//After field is created, go to field configuration
+//Enter the following script into default value
+
+<div>
+  <h3 style="margin-top:  5px; font-size: 1rem;">Capacity Risk</h3>
+
+  <div style="font-style: italic; font-size: 0.875rem;">The risk related to our ability to deliver based on the capacity of our system of delivery.</div>
+<blockquote>
+  <div style="font-weight: 700; font-size: 1.0rem; color: #243033;">Do we have everything needed to deliver it?</div>
+
+  <div style="font-size: 0.875rem;">
+    <div style="font-weight: 700; color: #174b84;">Low Risk | 0, 10</div>
+    <div style="color: #243033;">Fairly <span style="font-weight: 700;">stable delivery structure</span> with capable people and some resources may not be available for the duration of the work.</div>
+
+    <div style="font-weight: 700; color: #174b84;">Medium Risk | 30</div>
+    <div style="color: #243033;"><span style="font-weight: 700;">Not all of our team members are identified and/or dedicated</span> to this work or there are skill gaps.</div>
+
+    <div style="font-weight: 700; color: #174b84;">High Risk | 70, 100</div>
+    <div style="color: #243033;"><span style="font-weight: 700;">Teams are constantly changing,</span> team members are also assigned to other projects and/or the teams aren’t setup right.</div>
+  </div>
+</blockquote>
+</div>

@@ -1,0 +1,23 @@
+//Create Message Custom Filed (for edit)
+//After field is created, go to field configuration
+//Enter the following script into default value
+
+<div>
+  <h3 style="margin-top:  5px; font-size: 1rem;">Dependency Risk</h3>
+
+  <div style="font-style: italic; font-size: 0.875rem;">The risk related to the solution and organizational dependencies creating sequencing complexity as well as diluting accountability.</div>
+<blockquote>
+  <div style="font-weight: 700; font-size: 1.0rem; color: #243033;">Can we have everything needed to deliver as anticipated?</div>
+
+  <div style="font-size: 0.875rem;">
+    <div style="font-weight: 700; color: #174b84;">Low Risk | 0, 10</div>
+    <div style="color: #243033;"><span style="font-weight: 700;">Minimal</span> dependencies.</div>
+
+    <div style="font-weight: 700; color: #174b84;">Medium Risk | 30</div>
+    <div style="color: #243033;"><span style="font-weight: 700;">Multiple known dependencies</span> with some of the work underway or accounted for with appropriate lead time.</div>
+
+    <div style="font-weight: 700; color: #174b84;">High Risk | 70, 100</div>
+    <div style="color: #243033;"><span style="font-weight: 700;">Multiple dependencies with no, or unrealistic, time frame</span> on when they can deliver on their portion of the work.</div>
+  </div>
+</blockquote>
+</div>

@@ -1,0 +1,23 @@
+//Create Message Custom Filed (for edit)
+//After field is created, go to field configuration
+//Enter the following script into default value
+
+<div>
+  <h3 style="margin-top:  5px; font-size: 1.0rem;">Quality of Solutions Risk</h3>
+
+  <div style="font-style: italic; font-size: 0.875rem;">The risks related to actually delivering on the solutions which are delivering the intended impact as well as our technical quality.</div>
+<blockquote>
+  <div style="font-weight: 700; font-size: 1.0rem; color: #243033;">Can we get feedback to manage risks and identify tradeoffs?</div>
+
+  <div style="font-size: 0.875rem;">
+    <div style="font-weight: 700; color: #174b84;">Low Risk | 0, 10</div>
+    <div style="color: #243033;">Mostly clear on how to test this work and have <span style="font-weight: 700;">a few unknown Acceptance criteria.</span></div>
+
+    <div style="font-weight: 700; color: #174b84;">Medium Risk | 30</div>
+    <div style="color: #243033;">Partial clarity on how to test this work and <span style="font-weight: 700;">need to gain more clarity on the Acceptance criteria.</span></div>
+
+    <div style="font-weight: 700; color: #174b84;">High Risk | 70, 100</div>
+    <div style="color: #243033;">Not entirely sure how we are going to test this and <span style="font-weight: 700;">do not have clear acceptance criteria.</span></div>
+  </div>
+</blockquote>
+</div>
