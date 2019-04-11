@@ -1,0 +1,22 @@
+//Create Message Custom Filed (for edit)
+//After field is created, go to field configuration
+//Enter the following script into default value
+
+<div>
+  <h3 style="margin-top:  5px; font-size: 1rem;">Technical Discovery and Debt Risk</h3>
+  <div style="font-style: italic; font-size: 0.875rem;">The risk related to the decisions of the past that has led to the current solution landscape and the ability for the solution landscape to match the ambition of movement going forward.</div>
+<blockquote>
+  <div style="font-weight: 700; font-size: 1.0rem; color: #243033;">Can we build it?</div>
+
+  <div style="font-size: 0.875rem;">
+    <div style="font-weight: 700; color: #174b84;">Low Risk | 0, 10</div>
+    <div style="color: #243033;">Our current <span style="font-weight: 700;">Architecture requires minor enhancement</span> to support the technology and we have the skills to do the work.</div>
+
+    <div style="font-weight: 700; color: #174b84;">Medium Risk | 30</div>
+    <div style="color: #243033;">The current <span style="font-weight: 700;">Architecture will need major modification</span> to support this technology but need to verify that this in fact the case.</div>
+
+    <div style="font-weight: 700; color: #174b84;">High Risk | 70, 100</div>
+    <div style="color: #243033;">This is an <span style="font-weight: 700;">entirely new technology that our current architecture does not support</span> and we will need to train someone on how to use it.</div>
+  </div>
+</blockquote>
+</div>
