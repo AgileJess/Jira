@@ -1,0 +1,16 @@
+import com.atlassian.jira.component.ComponentAccessor;
+import com.atlassian.jira.issue.CustomFieldManager;
+import com.atlassian.jira.issue.fields.CustomField;
+import com.atlassian.jira.issue.IssueManager;
+import com.atlassian.jira.issue.Issue;
+import com.atlassian.jira.issue.ModifiedValue;
+import com.atlassian.jira.issue.util.DefaultIssueChangeHolder;
+
+def issue = event.issue as Issue
+def CurrentUser = ComponentAccessor.getJiraAuthenticationContext().getLoggedInUser().name
+def customFieldManager = ComponentAccessor.getCustomFieldManager()
+def EpicRiskScore = customFieldManager.getCustomFieldObjectByName("Epic Risk Score Total")
+def EpicRiskScoreValue = issue.getCustomFieldValue(EpicRiskScore)
+def tgtField = customFieldManager.getCustomFieldObjects(event.issue).find {it.name == "Risk Score"}
+def changeHolder = new DefaultIssueChangeHolder()
+tgtField.updateValue(null, issue, new ModifiedValue(issue.getCustomFieldValue(tgtField), EpicRiskScoreValue),changeHolder)
