@@ -1,6 +1,7 @@
 //Adaptavist ScriptRunner Scripted Field, custom Scripted
 //Searcher:  Free Text Searcher
 //Template:  Number Field
+//issue https://community.atlassian.com/t5/Jira-questions/Update-Custom-Value-from-Calculated-Field-using-quot/qaq-p/1059907#M338703
 
 import com.atlassian.jira.component.ComponentAccessor
 import com.atlassian.jira.issue.CustomFieldManager
