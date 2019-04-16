@@ -6,7 +6,7 @@ import com.atlassian.jira.component.ComponentAccessor
 import com.atlassian.jira.issue.CustomFieldManager
 
 CustomFieldManager customFieldManager = ComponentAccessor.getCustomFieldManager()
-List<String> fieldNames = ["Business Risks Score","Technical Risks Score","Validation Risks Score","Organizational Risks Score","Dependency Risks Score"]
+List<String> fieldNames = ["Business Risks Score","Scope Risk Score","Technical Risks Score","Technical Discovery and Debt Score","Validation Risks Score","Quality of Solutions Score","Organizational Risks Score","Capacity Risk Score","Dependency Risks Score"]
 List<Integer> scores = []
 for (String field : fieldNames){
     def cf = customFieldManager.getCustomFieldObjectByName(field)
