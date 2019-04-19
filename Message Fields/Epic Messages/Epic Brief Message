@@ -1,0 +1,12 @@
+<div>
+  <h3 style="font-size: 1rem; color: #259271">Epic Brief Overview </h3>
+  <div style="font-size: 0.875rem; padding: 10px">The epic brief is designed to support <span style="italic">progressive development</span> of a solution to a prioritized problem.  This includes 4 steps:
+    <ol>
+      <li>Identifying the value during <b>PORTFOLIO ALIGNMENT</b></li>
+      <li>Prioritizing the investment during <b>PORTFOLIO PRIORITIZATION</b></li>
+      <li>Creating and selecting solution options during <b>SOLUTION DEFINITION</b></li>
+      <li>Revisiting the prioritization and orchestrating release during <b>RELEASE TARGETING</b></li>
+    </ol>
+  <div style="margin-bottom: 5px;"></div>
+ </div>
+</div>
