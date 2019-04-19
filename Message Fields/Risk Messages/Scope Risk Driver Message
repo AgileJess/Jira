@@ -1,0 +1,24 @@
+//Create Message Custom Filed (for edit)
+//After field is created, go to field configuration
+//Enter the following script into default value
+
+<div>
+  <h3 style="margin-top:  5px; font-size: 1.0rem;">Scope Risk</h3>
+
+  <div style="font-style: italic; font-size: 0.875rem;">The risk related to identifying the optimal scope which will make an impact for both the business and for the end customers.</div>
+<blockquote>
+<div style="font-weight: 700; font-size: 1.0rem; color: #243033;">Do we understand what we need to build?</div>
+
+  <div style="font-size: 0.875rem;">
+    <div style="font-weight: 700; color: #174b84;">Low Risk | 0, 10</div>
+    <div style="color: #243033;">We are <span style="font-weight: 700;">mostly clear</span> on what we need to deliver on yet have an incomplete story to tell about the work.</div>
+
+    <div style="font-weight: 700; color: #174b84;">Medium Risk | 30</div>
+    <div style="color: #243033;">We have <span style="font-weight: 700;">little clarity</span> of what we need to deliver on and have an incomplete story to tell about the work.</div>
+
+    <div style="font-weight: 700; color: #174b84;">High Risk | 70, 100</div>
+    <div style="color: #243033;">We know there is work to be done, but we <span style="font-weight: 700;">can't articulate any aspect of the business value desired.</span></div>
+  </div>
+</blockquote>
+</div>
+
