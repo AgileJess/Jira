@@ -1,5 +1,6 @@
 <div>
-  <h4 style="color: #259271; font-size: 1rem;">Epic Problem Statement</h4>
-    <div style="font-size: 0.875rem; padding: 10px; text-align: justified"><span style="color: #999999; font-weight: 700;">User Problem Statement | </span> <span style="font-style: italic;">Describe the specific <u>user</u> problem for which we are solving with this epic.  Our investment is intended to get value through changing a behavior.  What problem are we trying to solve for our user which makes behavior change possible?</span>
+  <h4 style="color: #259271; font-size: 1rem; font-weight: 600">Epic Problem Statement</h4>
+    <div style="font-size: 0.9rem; padding: 10px; text-align: justified">
+      <p><span style="color: #999999; font-weight: 600;">User Problem Statement |</span> <span style="font-style: italic;">Describe the specific <span style="text-decoration: underline;">user</span> problem for which we are solving with this epic.  Our investment is intended to get value through changing a behavior.  What problem are we trying to solve for our user which makes behavior change possible?</span></p>
     </div>
-<div>
+</div>
