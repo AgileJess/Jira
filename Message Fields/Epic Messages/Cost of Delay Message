@@ -1,3 +1,6 @@
-<h4><font color="#259271">Cost of Delay</font></h4>
-
-<p><b><font color="#999999">Cost of Delay |</font></b> <i>Identify the opportunity cost of delaying this benefit realized from doing this work.  Everything we choose to do comes at the cost of not doing something else.  Include reference to business case, financial model, etc... when available.</i></p>
+<div>
+  <h4 style="color: #259271; font-size: 1rem; font-weight: 600">Cost of Delay</h4>
+    <div style="font-size: 0.875rem; padding: 10px; text-align: justified">
+      <p><span style="color: #999999; font-weight: 600;">Cost of Delay |</span> <span style="font-style: italic;">Identify the opportunity cost of delaying this benefit realized from doing this work.  Everything we choose to do comes at the cost of not doing something else.  Include reference to business case, financial model, etc... when available.</span></p>
+    </div>
+</div>
