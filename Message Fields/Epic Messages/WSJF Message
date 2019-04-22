@@ -1,3 +1,6 @@
-<h4><font color="#259271">Weighted Shortest Job First (WSJF)</font></h4>
-<p>
-<b><font color="#999999">Weighted Shortest Job First | </font></b><i>A simplified approach to estimation which approximates Cost of Delay, WSJF is useful for informing prioritization conversations.  Use Fibonacci or modified doubles for relative value estimates.</i></p>
+<div>
+  <h4 style="color: #259271; font-size: 1rem; font-weight: 600">Weighted Shortest Job First (WSJF)</h4>
+    <div style="font-size: 0.875rem; padding: 10px; text-align: justified">
+      <p><span style="color: #999999; font-weight: 600;">Weighted Shortest Job First |</span> <span style="font-style: italic;">A simplified approach to estimation which approximates Cost of Delay, WSJF is useful for informing prioritization conversations.  Use Fibonacci or modified doubles for relative value estimates.</span></p>
+    </div>
+</div>
