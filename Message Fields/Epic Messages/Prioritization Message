@@ -1,0 +1,6 @@
+<div>
+  <h3 style="font-size: 1.1rem; color: #259271; font-weight: 700">Prioritization</h3>
+    <div style="font-size: 0.875rem; padding: 10px; text-align: justified">
+      <p>Prioritization combines the agile principles of accelerating value with the lean principles of minimizing waste.  We use Cost of Delay (CoD) or Weighted Shortest Job First (WSJF) to inform the investment and prioritization discussions and decisions.  Any given team will use on approach or the other (CoD vs WSJF).</p>
+    </div>
+</div>
