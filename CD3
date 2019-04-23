@@ -1,0 +1,19 @@
+import com.atlassian.jira.component.ComponentAccessor
+import com.atlassian.jira.issue.CustomFieldManager
+
+CustomFieldManager customFieldManager = ComponentAccessor.getCustomFieldManager()
+List<String> fieldNames = ["CoD"]
+def delayCf = customFieldManager.getCustomFieldObjectByName("Delay")
+def delay = (Integer) issue.getCustomFieldValue(delayCf)?: 0
+
+if(delay == 0){
+    return delay; //return zero
+}
+
+List<Integer> scores = []
+for (String field : fieldNames){
+    def cf = customFieldManager.getCustomFieldObjectByName(field)
+    scores.add((Integer) issue.getCustomFieldValue(cf)?: 0)
+}
+
+return scores.sum {it} / delay
