@@ -3,11 +3,11 @@ import com.atlassian.jira.issue.CustomFieldManager
 
 CustomFieldManager customFieldManager = ComponentAccessor.getCustomFieldManager()
 List<String> fieldNames = ["Time Criticality","Risk Reduction","Business Value"]
-def swagCf = customFieldManager.getCustomFieldObjectByName("SWAG")
-def swag = (Integer) issue.getCustomFieldValue(swagCf)?: 0
+def durCf = customFieldManager.getCustomFieldObjectByName("Duration")
+def dur = (Integer) issue.getCustomFieldValue(durCf)?: 0
 
-if(swag == 0){
-    return swag; //return zero
+if(dur == 0){
+    return dur; //return zero
 }
 
 List<Integer> scores = []
@@ -16,4 +16,4 @@ for (String field : fieldNames){
     scores.add((Integer) issue.getCustomFieldValue(cf)?: 0)
 }
 
-return scores.sum {it} / swag
+return scores.sum {it} / dur
