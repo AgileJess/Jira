@@ -2,12 +2,12 @@ import com.atlassian.jira.component.ComponentAccessor
 import com.atlassian.jira.issue.CustomFieldManager
 
 CustomFieldManager customFieldManager = ComponentAccessor.getCustomFieldManager()
-List<String> fieldNames = ["Time Criticality","Risk Reduction","Business Value"]
-def durCf = customFieldManager.getCustomFieldObjectByName("Duration")
-def dur = (Integer) issue.getCustomFieldValue(durCf)?: 0
+List<String> fieldNames = ["CoD"]
+def delayCf = customFieldManager.getCustomFieldObjectByName("Delay")
+def delay = (Integer) issue.getCustomFieldValue(delayCf)?: 0
 
-if(dur == 0){
-    return dur; //return zero
+if(delay == 0){
+    return delay; //return zero
 }
 
 List<Integer> scores = []
@@ -16,4 +16,4 @@ for (String field : fieldNames){
     scores.add((Integer) issue.getCustomFieldValue(cf)?: 0)
 }
 
-return scores.sum {it} / dur
+return scores.sum {it} / delay

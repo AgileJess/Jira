@@ -1,0 +1,10 @@
+<div>
+  <h3 style="font-size: 1rem; color: #259271; font-weight: 600;">Recommendation</h3>
+    <div style="font-size: 0.875rem; padding: 10px">
+      <ul>
+        <li><span style="font-weight: 600;">Continue</span> - There is a determination that the risk is acceptable or specific actions have been taken to minimize or mitigate the risk make it acceptable to proceed with Epic</li>
+        <li><span style="font-weight: 600;">Change</span> - Changes or trade-offs are made to the Epic to circumvent the risk</li>
+        <li><span style="font-weight: 600;">Kill</span> - Abandon the Epic because the risk to proceed makes it no longer an investment the team is willing to make</li>
+      </ul>
+    </div>
+</div>

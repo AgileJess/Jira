@@ -1,0 +1,11 @@
+<div>
+  <h4 style="font-size: 1rem; color: #259271">RIDA Type</h4>
+    <div style="font-size: 0.875rem; padding: 10px">
+      <ul>
+        <li><span style="font-weight: 600;">Risk</span> - Any foreseen event which may negatively impact delivery of the Epic</li>
+        <li><span style="font-weight: 600;">Impediment</span> - Unlike risks, these are problems that have been realized</li>
+        <li><span style="font-weight: 600;">Dependency</span> - Dependencies exist when team is reliant on another team to deliver, either inside or outside of the system of delivery</li>
+        <li><span style="font-weight: 600;">Assumption</span> - Anything believed to be true but needs to be confirmed before proceeding with planning</li>
+      </ul>
+    </div>
+</div>
