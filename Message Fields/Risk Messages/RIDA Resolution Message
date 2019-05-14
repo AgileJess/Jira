@@ -1,0 +1,9 @@
+<div>
+  <h3 style="font-size: 1rem; color: #259271; font-weight: 600;">Resolution</h3>
+    <div style="font-size: 0.875rem; padding: 10px">
+      <ul>
+        <li><span style="font-weight: 600;">Mitigated</span> - Complete solution was not provided but a sutable workaround to the RIDA has been implemented</li>
+        <li><span style="font-weight: 600;">Smashed</span> - A solution has been provided and the RIDA is solved</li>
+      </ul>
+    </div>
+</div>

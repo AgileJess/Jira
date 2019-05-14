@@ -1,0 +1,13 @@
+<div>
+  <h4 style="font-size: 1rem; color: #259271">Business Driver</h4>
+    <div style="font-size: 0.875rem; padding: 10px">
+      <p>RIDAs are categorized by a Business Driver so that the team can prioritize threats to the business drivers that matter most. RIDAs are actively managed by the Portfolio and Program teams to dedicate focus and effort on resolution as early as possible.</p>
+        <ul>
+          <li><span style="font-weight: 600;">Scope</span> - The RIDA related to identifying the optimal scope which will make an impact for both the business and for the end customers</li>
+          <li><span style="font-weight: 600;">Capacity</span> - The RIDA related to our ability to deliver based on the capacity of our system of delivery</li>
+          <li><span style="font-weight: 600;">Technical Discovery and Debt</span> - The RIDA related to the decisions of the past that has led to the current solution landscape and the ability for the solution landscape to match the ambition of movement going forward</li>
+          <li><span style="font-weight: 600;">Dependency</span> - The RIDA related to the solution and organizational dependencies creating sequencing complexity as well as diluting accountability</li>
+          <li><span style="font-weight: 600;">Quality of Solutions</span> - The RIDA related to actually delivering on the solutions which are delivering the intended impact as well as our technical quality</li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<div>
+  <h2 style="font-size: 1.1rem; color: #259271; font-weight: 600;">Risk Management Overview</h2>
+  <div style="font-size: 0.875rem; padding: 10px">
+    <p>Risk Management is crucial to maintaining the flow of work in the system of delivery. Risks, Impediments, Dependencies, and Assumptions (RIDA) are tied to Epics as anything which may impede the delivery for that Epic. Ultimately all RIDAs threaten the intended business outcome of an Epic, but each component focuses on a specific characterization of risk.</p>
+  <div style="margin-bottom: 5px;"></div>
+ </div>
+</div>
