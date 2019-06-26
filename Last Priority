@@ -1,0 +1,10 @@
+result = issue.getFieldHistory('priority')
+if (result == null){
+  return '0'
+}
+length = result.size()
+if (length == 0){
+  result[0]?.fromString
+} else {
+  result[length-1]?.fromString
+}  
